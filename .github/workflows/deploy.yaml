@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-   #env:
-  echo my access key id  ${{ secrets.MY_AWS_ACCESS_KEY_ID }}
-  echo my secret access key id ${{ secrets.MY_AWS_SECRET_ACCESS_KEY }}
-  #AWS_REGION: "us-east-1"
-  #    if: github.event_name == 'workflow_dispatch'
+
+      - name: Run a one-Line script
+        run: |
+         echo my access key id  ${{ secrets.MY_AWS_ACCESS_KEY_ID }}
+         echo my secret access key id ${{ secrets.MY_AWS_SECRET_ACCESS_KEY }}
