@@ -27,4 +27,4 @@ jobs:
         run: terraform plan
       - name: Run Terraform Apply
         run: terraform apply -auto-approve
-        if: github.event_name == 'workflow_dispat
+        if: github.event_name == "workflow_dispatch"
